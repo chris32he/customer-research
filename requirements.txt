@@ -1,4 +1,4 @@
 langchain==0.0.324  # Replace with the correct version number
 openai==0.27.0 
 tiktoken==0.4.0
-faiss-cpu = 1.7.4
+faiss-cpu== 1.7.4
