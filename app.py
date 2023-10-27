@@ -5,9 +5,6 @@ from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import LLMChain
-from dotenv import load_dotenv
-
-load_dotenv()
 
 # 1. Vectorise the sales response csv data
 loader = CSVLoader(file_path="customer-interviews2.csv")
