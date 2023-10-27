@@ -1,0 +1,1 @@
+langchain==0.0.324  # Replace with the correct version number
