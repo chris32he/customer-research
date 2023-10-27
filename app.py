@@ -11,8 +11,9 @@ loader = CSVLoader(file_path="customer-interviews2.csv")
 documents = loader.load()
 
 # print(len(documents))
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
-embeddings = OpenAIEmbeddings()
+embeddings = OpenAIEmbeddings(openai_api_key=openai_api_key)
 db = FAISS.from_documents(documents, embeddings)
 
 
